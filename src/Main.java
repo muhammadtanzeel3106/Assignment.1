@@ -123,7 +123,7 @@ class MaintenanceTicket extends Ticket {
 
     @Override
     public double priorityScore() {
-        double score = 5.0;
+        double score = 999.0;
         if (getLocation().toLowerCase().contains("lab"))     score += 3.0;
         if (type.equalsIgnoreCase("Chair") ||
                 type.equalsIgnoreCase("Desk"))                   score += 1.0;
