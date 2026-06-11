@@ -195,7 +195,7 @@ public class Main {
         }
     }
 
-    static void printMenu() {
+    static void printMenu() {// validated input menu
         System.out.println("\n-------- MAIN MENU --------");
         System.out.println("1. Add Person (Student / Staff)");
         System.out.println("2. Create Ticket");
