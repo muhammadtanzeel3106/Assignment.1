@@ -202,6 +202,7 @@ public class Main {
         System.out.println("3. View All Tickets");
         System.out.println("4. Update Ticket Status");
         System.out.println("5. Exit");
+        System.out.println("6. Export Report (coming soon)");
         System.out.println("---------------------------");
     }
 
