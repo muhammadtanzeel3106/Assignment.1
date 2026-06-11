@@ -306,6 +306,13 @@ public class Main {
             System.out.println(t);   // polymorphism — calls each ticket's toString()
         System.out.println("=================================");
     }
+    static void printTicketReport() {
+        long newCount      = tickets.stream().filter(t -> t.getStatus().equals("New")).count();
+        long assignedCount = tickets.stream().filter(t -> t.getStatus().equals("Assigned")).count();
+        long resolvedCount = tickets.stream().filter(t -> t.getStatus().equals("Resolved")).count();
+        System.out.println("--- Ticket Report ---");
+        System.out.println("New: " + newCount + " | Assigned: " + assignedCount + " | Resolved: " + resolvedCount);
+    }
 
     static void updateTicketStatus() {
         if (tickets.isEmpty()) {
